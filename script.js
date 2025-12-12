@@ -29,6 +29,18 @@ let Get_Template = (month, image_url) => {
 	return Template;
 }
 
+function load_season(container_dom, months_array, images_array){
+	container_dom.innerHTML = "";
+	months_array.forEach( (month, index) => {
+		
+		let Month_Image_URL = images_array[index];
+
+		let Template = Get_Template(month, Month_Image_URL);
+		container_dom.insertAdjacentHTML("beforeend", Template);
+
+	});
+}
+
 function displayWinter() {
 	winter_container_DOM.innerHTML = "";
 	winter.forEach( (month, index) => {
