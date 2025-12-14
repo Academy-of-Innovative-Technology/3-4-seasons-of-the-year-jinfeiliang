@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
 html {
 	height: 100%;
 	width: 100%;
@@ -7,10 +9,14 @@ html {
 	box-sizing: border-box;	
 }
 
+h3 {
+	font-size: 30px;
+	text-decoration: underline;
+}
+
 .container {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr;
-	grid-template-rows: 1fr 1fr 1fr;
 	gap: 8px;
 }
 
@@ -23,10 +29,20 @@ html {
 }
 
 .month-card {
-	border: 1px solid #ddd;
+	border: 2px solid #ddd;
 	border-radius: 5px;
 	overflow: hidden;
 	margin-bottom: 15px;
+	padding: 8px;
+
+
+	font-family: "Noto Sans", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: normal;
+	font-style: normal;
+	font-variation-settings: "wdth" 100;
+	font-size: 25px;
+	background-color: #FAFAFA;
 }
 
 .month-card img {
